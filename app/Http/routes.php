@@ -17,9 +17,8 @@ Route::get('/', function () {
 Route::get('welcome', function(){
 	return view('welcome');
 });
-
-Route::get('facebooklogin', function(){
-	return View::make('pages.facebooklogin');
+Route::get('profile', function(){
+	return view('pages.profile');
 });
 Route::get('home/before', 'HomeController@beforepurchase');
 
