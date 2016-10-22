@@ -12,7 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.login');
+});
+Route::get('welcome', function(){
+	return view('welcome');
 });
 
 Route::get('facebooklogin', function(){
