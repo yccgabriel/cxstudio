@@ -14,3 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('facebooklogin', function(){
+	return View::make('pages.facebooklogin');
+});
+Route::get('home/before', 'HomeController@beforepurchase');
+
+Route::get('booking/summary', 'BookingController@summary');
+Route::get('booking/payment', 'BookingController@payment');
+Route::get('booking/confirm', 'BookingController@confirm');
+
+Route::get('home/after', 'HomeController@afterpurchase');
